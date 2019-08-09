@@ -1,0 +1,87 @@
+:root {
+  /* scrollbar */
+
+  --scrollbar-bg: var(--dark);
+  --scrollbar-thumb-bg: var(--bg-light);
+
+  /* type */
+
+  /* use system fonts */
+  --font-family-default: -apple-system, BlinkMacSystemFont, /* MacOS and iOS */
+               'avenir next', avenir, /* MacOS and iOS */
+               'Segoe UI', /* Windows */
+               'lucida grande', /* Older MacOS */
+               'helvetica neue', helvetica, /* Older MacOS */
+               'Fira Sans', /* Firefox OS */
+               roboto, noto, /* Google stuff */
+               'Droid Sans', /* Old Google stuff */
+               cantarell, oxygen, ubuntu, /* Linux stuff */
+               'franklin gothic medium', 'century gothic', /* Windows stuff */
+               'Liberation Sans', /* Linux */
+               sans-serif; /* Everything else */
+
+  --font-size-default: 13px;
+  --font-weight-default: 300;
+  --font-weight-bold: 500;
+  --font-weight-light: 100;
+  --line-height-default: 1.6;
+
+  /* colors */
+
+  /* begin experiment */
+  /* colors */
+  --bg: #fff;
+  --copy: #222;
+  --link: #f63;
+  --highlight: #E75CE0;
+
+  /* tints */
+  --bg-light: rgb(47,59,71);
+
+  /* alphas */
+  --lighter: rgba(255,255,255,.25);
+  --light: rgba(255,255,255,.08);
+  --lighten: rgba(255,255,255,.025);
+  --dark: rgba(0,0,0,.1);
+  --darker: rgba(0,0,0,.25);
+  --darken: rgba(0,0,0,.025);
+
+  /* states */
+  --active-bg: #eee;
+  --active-border: 1px solid var(--lighter);
+  /* end experiment */
+
+  --primary-color: #3b99fc;
+  --chrome-color:  #fff;
+
+  /* Copy */
+  --gray-color: #333;
+
+  /* Borders */
+  --border-color: #D89C90;
+  --dark-border-color: #c2c0c2;
+  --darker-bottom-border-color: #a19fa1;
+  --toolbar-border-color: #939293;
+  --default-border-radius: 4px;
+
+  --border: 1px solid var(--dark);
+
+  /* Action colors */
+  --default-color:  #fff;
+  --positive-color: #34c84a;
+  --negative-color: #fc605b;
+  --warning-color: #fdbc40;
+
+  /* Shades */
+  --dark-color: #57acf5;
+
+  /* Focus and active colors */
+  --active-color: #116cd6;
+  --focus-input-color: #6db3fd;
+
+  /* Padding */
+  --padding: 10px;
+  --padding-mini: 3px;
+  --padding-less: 5px;
+  --padding-more: 20px;
+}

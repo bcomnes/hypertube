@@ -2,4 +2,22 @@ dist: xenial
 language: node_js
 node_js:
 - node
-cache: npm
+cache:
+  - npm
+  directories:
+    - ~/.electron
+    - ~/.cache/electron-builder
+services:
+  - vxfb
+os:
+  - osx
+  - linux
+matrix:
+  allow_failures:
+    - os: osx
+install:
+  - npm i
+script:
+  - xvfb-run --auto-servernum npm test
+after_success:
+  - npm run pkg

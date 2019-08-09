@@ -1,0 +1,65 @@
+html {
+  background: var(--bg);
+  box-sizing: border-box;
+  cursor: default !important; /* always be defaultin */
+  font-size: var(--font-size-default);
+  overflow: hidden;
+  width: 100%;
+  -webkit-user-select: none;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: var(--copy);
+  font-family: var(--font-family-default);
+  font-size: var(--font-size-default);
+  font-weight: var(--font-weight-default);
+  line-height: var(--line-height-default);
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  animation: fadeIn 0.5s ease-in;
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+hr {
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: var(--border);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+h1 { font-size: 36px; }
+h2 { font-size: 30px; }
+h3 { font-size: 24px; }
+h4 { font-size: 18px; }
+h5 { font-size: 14px; }
+h6 { font-size: 12px; }
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  display: inline-block;
+}
